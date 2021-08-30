@@ -1,0 +1,401 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WMCL"
+     xmlns:pu="clr-namespace:Panuon.UI.Silver;assembly=Panuon.UI.Silver"
+       
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" x:Class="WMCL.MainWindow"
+       
+    Title="MainWindow" Height="450" Width="800" WindowStyle="None" AllowsTransparency="True" Background="Transparent" OpacityMask="White" ResizeMode="NoResize" WindowStartupLocation="CenterScreen"  Loaded="Window_loaded" >
+
+
+    <Window.Resources>
+        <Style x:Key="DockPanelStyle1" TargetType="{x:Type DockPanel}"/>
+
+
+
+
+    </Window.Resources>
+
+    <Grid >
+
+
+
+
+
+        <Border   CornerRadius="5,0,0,5" x:Name="L" RenderTransformOrigin="0.501,0.516" Margin="-1,0,591,0" Background="#7F403C3C">
+            <Grid >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="450"/>
+
+                </Grid.RowDefinitions>
+                <Label x:Name="label20" Background="#FF4BD20F" Margin="80,33,10,391" Content="未登录" HorizontalContentAlignment="Center" FontWeight="Bold" Foreground="White" FontFamily="Microsoft YaHei">
+                    <Label.Effect>
+                        <DropShadowEffect Color="#99000000" BlurRadius="30"/>
+                    </Label.Effect>
+                </Label>
+                <Border  CornerRadius="180" BorderThickness="1" HorizontalAlignment="Left" Width="71" Margin="4,33,0,346">
+                    <Border.BorderBrush>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF09EEF3"/>
+                            <GradientStop Color="#FF13C2FD" Offset="0.547"/>
+                            <GradientStop Color="#FF3903FF" Offset="0.977"/>
+                        </LinearGradientBrush>
+                    </Border.BorderBrush>
+                    <Border.Background>
+                        <ImageBrush x:Name="image1" ImageSource="/用户.png" />
+                    </Border.Background>
+                </Border>
+                <Button x:Name="button7" Content="" FontSize="14"  BorderThickness="0"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="8" Height="32" Click="Button7_Click" RenderTransformOrigin="5.456,1.185" FontFamily="Microsoft JhengHei" Margin="0,170,0,0">
+                    <Button.Foreground>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="Black" Offset="0"/>
+                            <GradientStop Color="#FF041DED" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Foreground>
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="1,1" StartPoint="0,0">
+                            <GradientStop Color="#FF475DE6" Offset="1"/>
+                            <GradientStop Color="#FF57CC9F" Offset="0.02"/>
+
+                        </LinearGradientBrush>
+                    </Button.Background>
+                    <Button.Template>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border BorderThickness="1" CornerRadius="0" Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+
+                <Button x:Name="button9" Content="首页" FontSize="18" BorderThickness="0" Background="Transparent"  HorizontalAlignment="Center" VerticalAlignment="Top" Width="190" Height="31" Foreground="White" Click="Button9_Click" RenderTransformOrigin="5.456,1.185" Margin="0,170,0,0" Cursor="Hand">
+
+                    <Button.Template>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border BorderThickness="1" CornerRadius="0" Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+
+                </Button>
+                <Image Margin="17,174,167,252" Source="/主页.png" >
+                    <Image.OpacityMask>
+                        <ImageBrush ImageSource="/主页.png"/>
+                    </Image.OpacityMask>
+
+                </Image>
+                <Button x:Name="button6" Content="设置" FontSize="18" BorderThickness="0" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Top" Width="190" Height="31" Foreground="White" Click="Button6_Click" RenderTransformOrigin="5.456,1.185" Margin="0,220,0,0" Cursor="Hand">
+
+                    <Button.Template>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border BorderThickness="1" CornerRadius="0" Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                <Image Margin="17,224,167,202" Source="/设 置.png" />
+                <Button x:Name="button8" Content="游戏" FontSize="18" BorderThickness="0" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Top" Width="190" Height="31" Foreground="White" Click="Button8_Click" RenderTransformOrigin="5.456,1.185" Margin="0,270,0,0" Cursor="Hand">
+
+                    <Button.Template>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border BorderThickness="1" CornerRadius="0" Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                <Image Margin="17,274,167,152" Source="/游戏 (1).png" />
+                <Button x:Name="button10" Content="档案" FontSize="18" BorderThickness="0" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Top" Width="190" Height="31" Foreground="White" Click="Button10_Click" RenderTransformOrigin="5.456,1.185" Margin="0,320,0,0" Cursor="Hand">
+
+                    <Button.Template>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border BorderThickness="1" CornerRadius="0" Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                <Image Margin="16,324,168,102" Source="/档案.png" RenderTransformOrigin="0.52,0.571" />
+            </Grid>
+        </Border>
+
+        <Border Margin="209,0,0,0" x:Name="R" CornerRadius="0,5,5,0" Background="#333C3535" >
+
+            <Grid x:Name="l" Loaded="l_loaded"  >
+                <Image Margin="295,60,269,362" Source="/核心网专线.png"/>
+                <Label Margin="326,59,171,363" Content="核心管理" FontSize="14" FontWeight="Normal" FontFamily="Microsoft YaHei" Foreground="White"/>
+                <Grid Margin="36,42,327,77" Background="#99FFFFFF">
+                    <Image  Source="/内存 (2).png" Margin="58,252,119,33"/>
+                    <ProgressBar x:Name="rambar"  
+
+pu:ProgressBarHelper.ProgressBarStyle="Ring"
+BorderBrush="#1E3F3F3F"
+Foreground="#CCD4237A"
+pu:ProgressBarHelper.AnimateTo="0"
+pu:ProgressBarHelper.IsPercentVisible="True" Background="{x:Null}" Width="150" Height="150" Margin="10,164,68,17" />
+                    <Label x:Name="cpu"  Content="错误" FontSize="14" FontWeight="Normal" FontFamily="Microsoft YaHei" Foreground="Black" Margin="139,130,0,166" Background="{x:Null}"/>
+                    <Image  Source="/cpu (1).png" Margin="58,92,119,193"/>
+                    <ProgressBar x:Name="cpubar"  
+
+pu:ProgressBarHelper.ProgressBarStyle="Ring"
+BorderBrush="#1E3F3F3F"
+Foreground="#CC4D80C5"
+pu:ProgressBarHelper.AnimateTo="0"
+pu:ProgressBarHelper.IsPercentVisible="True" Background="{x:Null}" Width="150" Height="150" Margin="10,5,68,176" />
+                    <Label x:Name="ram"  Content="错误" FontSize="14" FontWeight="Normal" FontFamily="Microsoft YaHei" Foreground="Black" Margin="139,294,0,2"/>
+                </Grid>
+                <Label Margin="70,10,427,412" Content="系统资源" FontSize="14" FontWeight="Normal" FontFamily="Microsoft YaHei" Foreground="White" RenderTransformOrigin="0.527,-1.315"/>
+                <Image Margin="37,13,527,409" Source="/系统.png"/>
+
+
+
+                <ListBox x:Name="ListBox5" Background="#99FFFFFF" Height="280" VerticalAlignment="Top" Margin="296,93,27,0" DisplayMemberPath="Id"/>
+
+
+
+                <Border Margin="0,382,0,0" Background="#333C3535"  CornerRadius="0,0,5,0">
+
+                    <Grid>
+
+                        <Label x:Name="label1" Content="未登录" HorizontalAlignment="Left" VerticalAlignment="Center" Height="42" Width="295" Foreground="White" FontFamily="Microsoft YaHei" FontSize="20" FontWeight="Bold" Margin="6,0,0,0"/>
+                        <Button x:Name="button30" Content="启动游戏" FontSize="14" BorderThickness="0" Background="#FF328C0B"  HorizontalAlignment="Left" VerticalAlignment="Center" Width="126" Height="48" Foreground="White" Click="Button30_Click" RenderTransformOrigin="5.456,1.185" Margin="459,0,0,0" Cursor="Hand" FontWeight="Bold"
+                          pu:ButtonHelper.IsWaiting="False"
+                          pu:ButtonHelper.ClickStyle="Sink"
+
+
+                        />
+                    </Grid>
+                </Border>
+            </Grid>
+
+        </Border>
+        <Border Background="#333C3535" Margin="-736,134,868,-136" x:Name="R1" CornerRadius="0,5,5,0" Height="450" Width="591">
+
+            <Grid>
+                <Button x:Name="button5_Copy2" Content="应用更改" BorderThickness="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Height="30" Foreground="White" Click="Button13_Click" RenderTransformOrigin="5.456,1.185" Cursor="Hand" Margin="498,409,0,0" FontWeight="Normal" BorderBrush="#FFFFF8F8" OpacityMask="White" Background="#FF475DFF">
+                    <Button.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform AngleY="0.21"/>
+                            <RotateTransform/>
+                            <TranslateTransform Y="3.674"/>
+                        </TransformGroup>
+                    </Button.RenderTransform>
+                    <Button.Template>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border BorderThickness="1" CornerRadius="5" Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+
+                </Button>
+                <Label x:Name="label1_Copy" Content="JAVA设置" HorizontalAlignment="Left" VerticalAlignment="Top" Height="37" Width="500" Foreground="White" FontFamily="Microsoft YaHei" FontSize="20" FontWeight="Bold" Margin="20,5,0,0"/>
+                <Grid Margin="20,42,22,39" Background="#CCFFFFFF"/>
+                <ComboBox x:Name="comboBox2" Margin="33,92,124,0" SelectedIndex="0" VerticalAlignment="Top" Width="Auto" Height="28" Foreground="#FF25A014" BorderBrush="#FFFDFDFD" SelectionChanged="ComboBox2_SelectionChanged" OpacityMask="#FFD64A4A" Background="{x:Null}" pu:ComboBoxHelper.CornerRadius="5"/>
+                <Label x:Name="label1_Copy4" Content="JAVA版本:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="26" Width="112" Foreground="Black" FontFamily="Microsoft YaHei" FontWeight="Normal" Margin="33,66,0,0" Background="{x:Null}"/>
+
+                <Button x:Name="button5_Copy4"  Width="94" Height="30"  Click="Button11_Click"  Margin="470,92,27,328" 
+                       
+
+pu:ButtonHelper.ClickStyle="Sink"
+Content="手动定位Java"
+pu:ButtonHelper.ButtonStyle="Link"
+BorderBrush="#963F3F3F"
+Foreground="#963F3F3F"
+pu:ButtonHelper.HoverBrush="#3F3F3F" 
+                        
+                        />
+
+
+
+                <Label x:Name="label1_Copy5" Content="JAVA最大内存(MB):" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="122" Foreground="Black" FontFamily="Microsoft YaHei" FontWeight="Normal" Margin="33,130,0,0"/>
+                <Label x:Name="label1_Copy6" Content="JAVA最小内存(MB):" HorizontalAlignment="Left" VerticalAlignment="Top" Height="27" Width="209" Foreground="Black" FontFamily="Microsoft YaHei" FontWeight="Normal" RenderTransformOrigin="0.5,0.5" Margin="30,200,0,0">
+                    <Label.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-0.289"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Label.RenderTransform>
+                </Label>
+
+
+                <TextBox  Height="30"
+                          x:Name="TextBox2"
+pu:TextBoxHelper.Icon="&#xF11C;"
+pu:TextBoxHelper.FocusedBorderBrush="#6800FF"
+pu:TextBoxHelper.FocusedShadowColor="#6800FF"
+pu:TextBoxHelper.CornerRadius="5"
+pu:TextBoxHelper.IsClearButtonVisible="True" Margin="33,165,52,255" Background="Transparent" BorderBrush="White" />
+
+                <TextBox  Height="30"
+                          x:Name="TextBox3"
+pu:TextBoxHelper.Icon="&#xF11C;"
+pu:TextBoxHelper.FocusedBorderBrush="#6800FF"
+pu:TextBoxHelper.FocusedShadowColor="#6800FF"
+pu:TextBoxHelper.CornerRadius="5"
+pu:TextBoxHelper.IsClearButtonVisible="True" Margin="33,226,52,194" Background="Transparent" BorderBrush="White" />
+
+
+            </Grid>
+
+        </Border>
+        <Border Background="#333C3535" Margin="887,545,-755,-549" x:Name="R2" CornerRadius="0,5,5,0" Height="450" Width="591">
+            <Grid>
+                <Label x:Name="label1_Copy1" Content="核心管理" HorizontalAlignment="Center" VerticalAlignment="Top" Height="42" Width="591" Foreground="White" FontFamily="Microsoft YaHei" FontSize="20" FontWeight="Bold"/>
+                <Button x:Name="button5_Copy3" Content="下载" BorderThickness="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Height="30" Foreground="White" Click="Button16_Click" RenderTransformOrigin="5.456,1.185" Cursor="Hand" Margin="517,408,0,0" FontWeight="Normal" Background="#FF475DFF" BorderBrush="#FFFFF8F8" OpacityMask="White">
+                    <Button.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform AngleY="0.21"/>
+                            <RotateTransform/>
+                            <TranslateTransform Y="3.674"/>
+                        </TransformGroup>
+                    </Button.RenderTransform>
+                    <Button.Template>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border BorderThickness="1" CornerRadius="5" Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+
+                </Button>
+                <Button x:Name="button15" Content="刷新列表" BorderThickness="0" HorizontalAlignment="Left" Width="72" Foreground="White" Click="Button15_Click" RenderTransformOrigin="5.456,1.185" Cursor="Hand" Margin="443,411,0,12" FontWeight="Normal" Background="#FF475DFF" BorderBrush="#FFFFF8F8" OpacityMask="White">
+                    <Button.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform AngleY="0.21"/>
+                            <RotateTransform/>
+                            <TranslateTransform Y="3.674"/>
+                        </TransformGroup>
+                    </Button.RenderTransform>
+                    <Button.Template>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border BorderThickness="1" CornerRadius="5" Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+
+                </Button>
+
+                <ListBox x:Name="ClientList" Background="#B2FFFFFF" Foreground="{x:Null}" BorderBrush="{x:Null}" Margin="10,42,10,56"/>
+
+
+
+
+
+            </Grid>
+
+        </Border>
+        <Border Background="#333C3535" Margin="845,71,-713,-66" x:Name="R3" CornerRadius="0,5,5,0" Height="450" Width="591">
+            <Grid  Margin="0,0,0,0">
+                <Label x:Name="label1_Copy2" Content="用户管理" HorizontalAlignment="Center" VerticalAlignment="Top" Height="42" Width="592" Foreground="White" FontFamily="Microsoft YaHei" FontSize="20" FontWeight="Bold"/>
+                <Border CornerRadius="180" BorderThickness="1" Margin="41,96,390,200" Width="154">
+                    <Border.BorderBrush>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF09EEF3"/>
+                            <GradientStop Color="#FF3903FF" Offset="1"/>
+                            <GradientStop Color="#FF13C2FD" Offset="0.547"/>
+                        </LinearGradientBrush>
+                    </Border.BorderBrush>
+                    <Border.Background>
+                        <ImageBrush ImageSource="/用户.png" />
+                    </Border.Background>
+                </Border>
+                <Label x:Name="label1_Copy3" Content="用户名:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="42" Width="74" Foreground="White" FontFamily="Microsoft YaHei" FontSize="20" FontWeight="Bold" Margin="201,96,0,0"/>
+
+                <TextBox x:Name="TextBox1" pu:TextBoxHelper.Icon="&#xF11C;"
+                         Text="未知"
+pu:TextBoxHelper.FocusedBorderBrush="#6800FF"
+pu:TextBoxHelper.FocusedShadowColor="#6800FF"
+pu:TextBoxHelper.CornerRadius="5"
+pu:TextBoxHelper.IsClearButtonVisible="True" Margin="280,100,43,320" Background="Transparent" BorderBrush="White" Foreground="#FFF7F7F7"/>
+
+                <Button x:Name="button5_Copy" Content="应用更改" BorderThickness="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="73" Height="30" Foreground="White" Click="Button12_Click" RenderTransformOrigin="5.456,1.185" Cursor="Hand" Margin="511,406,0,0" FontWeight="Normal" Background="#FF475DFF" BorderBrush="#FFFFF8F8" OpacityMask="White">
+                    <Button.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform AngleY="0.21"/>
+                            <RotateTransform/>
+                            <TranslateTransform Y="3.674"/>
+                        </TransformGroup>
+                    </Button.RenderTransform>
+                    <Button.Template>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border BorderThickness="1" CornerRadius="5" Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+
+                </Button>
+                <Button x:Name="button5_Copy1" Content="更改头像（正在开发）" BorderThickness="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="138" Height="30" Foreground="White" Click="Button5_Click" RenderTransformOrigin="5.456,1.185" Cursor="Hand" Margin="214,219,0,0" FontWeight="Normal" Background="#FF475DFF" BorderBrush="#FFFFF8F8" OpacityMask="White">
+                    <Button.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform AngleY="0.21"/>
+                            <RotateTransform/>
+                            <TranslateTransform Y="3.674"/>
+                        </TransformGroup>
+                    </Button.RenderTransform>
+                    <Button.Template>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border BorderThickness="1" CornerRadius="5" Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+
+                </Button>
+
+
+
+
+            </Grid>
+
+        </Border>
+
+        <Border Margin="-1,0,0,409" MouseMove="Move_MouseMove" Background="#003C3535"/>
+        <Button x:Name="button" Content="" FontSize="40" BorderThickness="0" HorizontalAlignment="Right" VerticalAlignment="Top" Width="15" Height="15" Foreground="White" Click="Button_Click" RenderTransformOrigin="5.456,1.185" Cursor="Hand" Margin="0,10,10,0">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="1,1" StartPoint="0,0">
+                    <GradientStop Color="Red" Offset="0"/>
+
+                </LinearGradientBrush>
+            </Button.Background>
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border BorderThickness="1" CornerRadius="30" Background="{TemplateBinding Background}">
+                        <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="button2" Content="" FontSize="40" BorderThickness="0" HorizontalAlignment="Right" Margin="0,10,31,0" VerticalAlignment="Top" Width="15" Height="15" Foreground="White" Click="Button2_Click" Cursor="Hand">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="1,1" StartPoint="0,0">
+                    <GradientStop Color="#FFFFE800" Offset="0"/>
+
+                </LinearGradientBrush>
+            </Button.Background>
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border BorderThickness="1" CornerRadius="30" Background="{TemplateBinding Background}">
+                        <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+    </Grid>
+</Window>
