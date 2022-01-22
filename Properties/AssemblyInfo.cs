@@ -7,8 +7,8 @@ using System.Windows;
 // 与程序集关联的信息。
 [assembly: AssemblyTitle("WMCL")]
 [assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyConfiguration("DEV3.5")]
+[assembly: AssemblyCompany("绾倾城开源软件事业")]
 [assembly: AssemblyProduct("WMCL")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
